@@ -5,6 +5,7 @@
 }
 body {
   background: #dbe4e6;
+  padding: 10px;
 }
 
 .main-container {
@@ -13,7 +14,7 @@ body {
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   margin: 100px auto;
   border-radius: 10px;
   background: #036b77;
@@ -21,6 +22,7 @@ body {
 }
 
 h1 {
+  margin-bottom: 40px;
   font-size: 40px;
   color: #f2f2f2;
   text-align: center;
