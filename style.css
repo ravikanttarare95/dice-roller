@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #dbe4e6;
+}
+
 .main-container {
   max-width: 600px;
   display: flex;
@@ -5,10 +14,19 @@
   gap: 20px;
   align-items: center;
   padding: 20px;
-  margin: 50px auto;
+  margin: 100px auto;
   border-radius: 10px;
-  background: #bbb2b2;
-  box-shadow: 0 0 5px 1px #1a1818;
+  background: #036b77;
+  box-shadow: 0 2px 2px 1px #1a1818;
+}
+
+h1 {
+  font-size: 40px;
+  color: #f2f2f2;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 5px #000, 0 0 5px #000,
+    0 0 5px #000, 0 0 10px #000, 0 0 5px #000, 0 0 10px #000;
 }
 
 .btn {
@@ -20,7 +38,7 @@
   font-size: 16px;
   font-weight: bold;
   transition: all 0.3s ease;
-  box-shadow: inset 1px 1px 5px #666, 1px 1px 5px #666262;
+  box-shadow: inset 1px 1px 5px #363636, 1px 1px 4px #000;
 }
 
 .btn:active {
@@ -40,13 +58,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 20px;
   gap: 50px;
+  border: #064c54 solid 2px;
+  background: #080808;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .dice-img-left {
   width: 70px;
   height: 70px;
+  filter: drop-shadow(0 0 2px #000);
 }
 
 .dice-container {
@@ -110,5 +132,29 @@
 #score {
   font-size: 30px;
   font-weight: bold;
-  color: #201e1e;
+  color: #e3e3e3;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 0;
+  font-size: 12px;
+  color: grey;
+  /* background: #000; */
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+}
+
+.github-icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
 }
