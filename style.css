@@ -62,10 +62,53 @@
 
 .dice-img {
   width: 150px;
+  filter: drop-shadow(0 2px 5px #000);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  12.5% {
+    transform: rotate(90deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  37.5% {
+    transform: rotate(270deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  62.5% {
+    transform: rotate(450deg);
+  }
+
+  75% {
+    transform: rotate(540deg);
+  }
+
+  87.5% {
+    transform: rotate(630deg);
+  }
+
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+.animation {
+  animation: rotate 0.5s ease-in-out;
 }
 
 #score {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   color: #201e1e;
 }
