@@ -4,11 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Dice Roller</title>
 </head>
 
 <body>
-    <h1>DICE ROLLER</h1>
+
+    <div class="main-container">
+        <h1>DICE ROLLER</h1>
+        <div class="game-container">
+            <div class="choose-dice">
+                <div><img src="./images/dice-1-red.png" alt="Red Dice" class="dice-img-left"></div>
+                <div><img src="./images/dice-1-silver.png" alt="Silver Dice" class="dice-img-left"></div>
+            </div>
+
+            <div class="dice-container">
+                <img src="./images/dice-1-red.png" alt="Dice" id="main-dice" class="dice-img">
+                <p id="score">Score:</p>
+                <button class="btn" onclick="playgame()">Roll Dice</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
