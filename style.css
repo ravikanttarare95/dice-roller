@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background: linear-gradient(135deg, #e3f6f5, #bae8e8);
+  background: linear-gradient(135deg, #bae8e8, #93e1e1);
 }
 
 .main-container {
@@ -80,11 +80,11 @@ h1 {
   box-shadow: 0 4px 15px rgba(39, 35, 67, 0.2);
   padding: 15px;
   border-radius: 50px;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
 }
 
 .dice-img {
   width: 200px;
-  /* filter: drop-shadow(2px 6px 8px 1px #000); */
 }
 
 @keyframes rotate {
