@@ -9,25 +9,27 @@
 </head>
 
 <body>
-
     <div class="main-container">
-        <h1>DICE ROLLER</h1>
-        <div class="game-container">
             <div class="choose-dice">
-                <div><img src="./images/dice-1-red.png" alt="Red Dice" class="dice-img-left" onclick="chooseRed()"></div>
-                <div><img src="./images/dice-1-silver.png" alt="Silver Dice" class="dice-img-left" onclick="chooseSilver()"></div>
+                <div><img src="./images/dice-1-red.png" alt="Red Dice" class="dice-img-left" onclick="chooseRed()">
+                </div>
+                <div><img src="./images/dice-1-silver.png" alt="Silver Dice" class="dice-img-left"
+                        onclick="chooseSilver()">
+                </div>
             </div>
 
             <div class="dice-container">
-                <img src="./images/dice-1-red.png" alt="Dice" id="main-dice" class="dice-img">
+                <h1>DICE ROLLER</h1>
+                <div class="dice-box"><img src="./images/dice-1-red.png" alt="Dice" id="main-dice" class="dice-img"></div>
                 <p id="score">-</p>
                 <button class="btn" onclick="playGame()">Roll Dice</button>
             </div>
-        </div>
+    
 
     </div>
     <div class="footer-container">
-        Get the source code on <a href="https://github.com/ravikanttarare95/dice-roller" target="_blank"><img class="github-icon" src="./images/github.png" alt="GitHub Icon"></a>
+        See the source code <a href="https://github.com/ravikanttarare95/dice-roller" target="_blank"><img
+                class="github-icon" src="./images/github.png" alt="GitHub Icon"></a>
     </div>
 
     <script src="script.js"></script>
