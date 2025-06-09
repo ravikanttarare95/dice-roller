@@ -1,12 +1,27 @@
 const mainDice = document.getElementById("main-dice");
 const gameScore = document.getElementById("score");
 const btnRoll = document.querySelector(".btn-roll");
+const redDice = document.querySelector(".red-dice");
+const silverDice = document.querySelector(".silver-dice");
 
-btnRoll.addEventListener("click", playGame);
+const mainContainer = document.querySelector(".main-container");
+
+mainContainer.addEventListener("click", (element) => {
+  let target = element.target;
+  if (target.classList.contains("red-dice")) {
+    chooseRed();
+  } else if (target.classList.contains("silver-dice")) {
+    chooseSilver();
+  } else if (target.classList.contains("btn-roll")) {
+    playGame();
+  }
+});
+
 function chooseRed() {
   mainDice.src = "./images/dice-1-red.png";
   gameScore.innerText = "-";
 }
+
 function chooseSilver() {
   mainDice.src = "./images/dice-1-silver.png";
   gameScore.innerText = "-";
