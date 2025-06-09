@@ -64,6 +64,12 @@ h1 {
   height: 70px;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.dice-img-left:hover {
+  transform: scale(1.07);
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
 }
 
 .dice-container {
@@ -87,6 +93,12 @@ h1 {
 
 .dice-img {
   width: 200px;
+  transition: all 0.3s ease-in-out;
+}
+
+.dice-img:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0 2px 7px rgba(0, 0, 0, 0.3));
 }
 
 @keyframes rotate {
