@@ -1,5 +1,8 @@
 const mainDice = document.getElementById("main-dice");
 const gameScore = document.getElementById("score");
+const btnRoll = document.querySelector(".btn-roll");
+
+btnRoll.addEventListener("click", playGame);
 function chooseRed() {
   mainDice.src = "./images/dice-1-red.png";
   gameScore.innerText = "-";
